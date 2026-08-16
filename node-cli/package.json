@@ -1,0 +1,20 @@
+{
+  "name": "mi-activation-cli",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "mi-activate": "./activate.mjs"
+  },
+  "scripts": {
+    "test": "node --test",
+    "check": "node --check activate.mjs && node --check lib/dom-runner.mjs && node --check lib/cli.mjs"
+  },
+  "dependencies": {
+    "jsdom": "30.0.1",
+    "webbluetooth": "3.7.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
